@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="myforms">
+        <img src="img/logo-ex-7.png" alt="logo">
+        <form action="" action="get">
+
+            <fieldset>
+                <legend>
+                    Information générales
+                </legend>
+                <div>
+                    <label for="name">Nom d'utilisateur</label>
+                    <input type="text" name="name" id="name" required autofocus maxlength="3" autocomplete="name"
+                        placeholder="Ex:Nadia">
+    
+                </div>
+                <div>
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ex:google@nadia.com">
+    
+                </div>
+                <div>
+                    <label for="mdp">Password</label>
+                    <input type="mdp" name="mdp" id="mdp" placeholder="mot de passe">
+                </div>
+            </fieldset>
+            <div>
+                <label for="search">Rechercher</label>
+                <input type="search" name="search" id="search" placeholder="rechercher ici ">
+            </div>
+
+            <div>
+                <label for="tel">Téléphone</label>
+                <input type="tel" name="tel" id="tel" placeholder="Votre numéro de Téléphone">
+            </div>
+            <div>
+                <label for="url">Site</label>
+                <input type="url" name="url" id="url" placeholder="www.votresite.com">
+            </div>
+            <!-- bouton et check box  -->
+            <div>
+                <div>
+                    votre sexe
+                </div>
+                <label for="homme">masculin</label>
+                <input type="radio" id="homme" name="sexe">
+                <label for="femme">féminin</label>
+                <input type="radio" id="femme" name="sexe">
+                <label for="autre">autre</label>
+                <input type="radio" id="autre" name="sexe">
+            </div>
+
+            <div>
+                <div>
+                    Vous aimez
+                </div>
+                <label for="vegetable">Les légumes</label>
+                <input type="checkbox" id="vegetable" name="miam">
+                <label for="meat">La viande</label>
+                <input type="checkbox" id="meat" name="miam">
+                <label for="kids">Les enfants</label>
+                <input type="checkbox" id="kids" name="miam">
+            </div>
+
+            <div>
+                <label for="country">Votre pays</label>
+                <select name="country" id="country">
+                    <optgroup label="BBM">
+                        <option value="be">Belgium</option>
+                        <option value="bf"selected>Burkina Faso</option>
+                        <option value="ml">Malaysia</option>
+                    </optgroup>
+                    <optgroup label="FMT">
+                            <option value="fi">finland</option>
+                            <option value="ma"selected>Maurice</option>
+                            <option value="Tb">Tibet</option>
+                        </optgroup>
+                </select>
+                <div>
+                        <label for="color">Choisissez votre couleur</label>
+                        <input type="color" id="color" name="color">
+
+
+                </div>
+
+                <div>
+                        <label for="date">Choisissez une date</label>
+                        <input type="date" id="date" name="date">
+
+
+                </div>
+                <div>
+                        <label for="file">Envoyez un fichier</label>
+                        <input type="file" id="file" name="file">
+
+
+                </div>
+
+
+            <div>
+                <label for="msg">Votre message</label>
+                <textarea id="msg" name="msg" placeholder="Ex: vore vision d'un monde post domination dynamics"></textarea>
+
+
+            </div>
+            <div>
+                <input type="submit" name="envoyer" id="envoyer" value="envoyer">
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
